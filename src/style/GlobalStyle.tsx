@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import { resetCSS, flexBody, FONTS } from 'lugo'
-import { background } from './darkTheme'
+import { background } from './theme'
 
 const GlobalStyle = createGlobalStyle`
   ${resetCSS}
