@@ -1,9 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
-import { ResetCSS, FONTS } from 'lugo'
+import { resetCSS, flexBody, FONTS } from 'lugo'
 import { background } from './darkTheme'
 
 const GlobalStyle = createGlobalStyle`
-  ${ResetCSS}
+  ${resetCSS}
+  ${flexBody}
 
   @font-face {
     font-family: ${FONTS.UBUNTU};
@@ -13,23 +14,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    height: 100%;
     font-size: 16px;
-    font-family: Ubuntu, sans-serif;
+    font-family: ${FONTS.UBUNTU}, sans-serif;
   }
 
   body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-  
     background-color: ${background.main};
     color: #fff;
-    word-wrap: break-word;
-  
-    main {
-      flex: 1;
-    }
   }
 `
 
