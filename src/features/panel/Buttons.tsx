@@ -1,6 +1,7 @@
 import type { HTMLAttributes } from 'react'
 import styled from 'styled-components'
 import Button from '../../style/Button'
+import { spacing } from '../../style/theme'
 
 const Buttons = styled((props: HTMLAttributes<HTMLDivElement>) => {
   return (
@@ -13,6 +14,12 @@ const Buttons = styled((props: HTMLAttributes<HTMLDivElement>) => {
 })`
   display: flex;
   gap: 1rem;
+
+  @media screen and (${spacing.mobileMaxWidth}) {
+    flex-direction: column;
+    min-height: 90vh;
+    width: 100%;
+  }
 `
 
 export default Buttons

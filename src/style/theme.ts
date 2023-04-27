@@ -1,3 +1,5 @@
+import { maxScrollbarWidth } from 'lugo'
+
 export const color = {
   primary: '#fd7e2d',
 }
@@ -14,6 +16,9 @@ export const breakpoint = {
   laptop: '1024px',
 }
 
-export const space = {
-  sideMargin: '4rem',
+const sideMargin = '4rem'
+export const spacing = {
+  sideMargin,
+  mobileMaxWidth: `max-width: calc(${breakpoint.mobile} + ${maxScrollbarWidth} + ${sideMargin} * 2)`,
+  tabletMaxWidth: `max-width: calc(${breakpoint.tablet} + ${maxScrollbarWidth} + ${sideMargin} * 2)`,
 }
