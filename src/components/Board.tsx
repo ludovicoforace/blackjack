@@ -1,18 +1,26 @@
 import type { HTMLAttributes } from 'react'
 import styled from 'styled-components'
-import { background } from '../style/theme'
+import { background, spacing } from '../style/theme'
+import Panel from '../features/panel/Panel'
 
 const Board = styled((props: HTMLAttributes<HTMLDivElement>) => (
-  <div {...props}>HELLO</div>
+  <div {...props}>
+    <Panel />
+  </div>
 ))`
   display: flex;
-  min-height: 80vh;
+  min-height: calc(100vh - (${spacing.viewportHeight} * 2));
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   background-color: ${background.secondary};
   border-radius: 8px;
+
+  padding: 2rem;
+
+  @media screen and (${spacing.tabletMaxWidth}) {
+    min-height: calc(100vh - ${spacing.viewportHeight});
+  }
 `
 
 export default Board
