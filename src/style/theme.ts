@@ -1,5 +1,6 @@
 export const background = {
   main: '#2a2a2e',
+  secondary: '#38383d',
 }
 
 export const breakpoint = {
@@ -10,5 +11,5 @@ export const breakpoint = {
 }
 
 export const space = {
-  sideMargin: '2rem',
+  sideMargin: '4rem',
 }
