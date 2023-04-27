@@ -5,11 +5,7 @@ import { breakpoint, spacing } from './style/theme'
 import Board from './components/Board'
 
 const App = styled((props: HTMLAttributes<HTMLDivElement>) => (
-  <PageContainer
-    {...props}
-    maxWidth={breakpoint.laptop}
-    sideMargin={spacing.viewportHeight}
-  >
+  <PageContainer {...props} maxWidth={breakpoint.laptop}>
     <Board />
   </PageContainer>
 ))`
