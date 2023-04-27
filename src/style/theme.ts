@@ -16,9 +16,9 @@ export const breakpoint = {
   laptop: '1024px',
 }
 
-const sideMargin = '4rem'
+const viewportHeight = '10vh'
 export const spacing = {
-  sideMargin,
-  mobileMaxWidth: `max-width: calc(${breakpoint.mobile} + ${maxScrollbarWidth} + ${sideMargin} * 2)`,
-  tabletMaxWidth: `max-width: calc(${breakpoint.tablet} + ${maxScrollbarWidth} + ${sideMargin} * 2)`,
+  viewportHeight,
+  mobileMaxWidth: `max-width: calc(${breakpoint.mobile} + ${maxScrollbarWidth})`,
+  tabletMaxWidth: `max-width: calc(${breakpoint.tablet} + ${maxScrollbarWidth})`,
 }

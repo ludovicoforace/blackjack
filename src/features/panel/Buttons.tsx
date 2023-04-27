@@ -15,9 +15,8 @@ const Buttons = styled((props: HTMLAttributes<HTMLDivElement>) => {
   display: flex;
   gap: 1rem;
 
-  @media screen and (${spacing.mobileMaxWidth}) {
+  @media screen and (${spacing.tabletMaxWidth}) {
     flex-direction: column;
-    min-height: 90vh;
     width: 100%;
   }
 `
