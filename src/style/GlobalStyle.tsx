@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${background.main};
+    background-color: ${background.primary};
     color: #fff;
   }
 `
