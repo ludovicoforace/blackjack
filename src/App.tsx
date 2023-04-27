@@ -1,9 +1,10 @@
+import type { HTMLAttributes } from 'react'
 import styled from 'styled-components'
 import { PageContainer } from 'lugo'
 import { breakpoint, spacing } from './style/theme'
 import Board from './components/Board'
 
-const App = styled(({ ...props }) => (
+const App = styled((props: HTMLAttributes<HTMLDivElement>) => (
   <PageContainer
     {...props}
     maxWidth={breakpoint.laptop}
