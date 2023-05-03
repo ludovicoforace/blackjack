@@ -2,10 +2,23 @@ import type { HTMLAttributes } from 'react'
 import styled from 'styled-components'
 import { background, spacing } from '../style/theme'
 import Panel from '../features/panel/Panel'
+import Player from '../features/player/Player'
+
+const PlayerWrapper = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+`
 
 const Board = styled((props: HTMLAttributes<HTMLDivElement>) => (
   <div {...props}>
     <Panel />
+    <PlayerWrapper>
+      <Player />
+      <Player />
+    </PlayerWrapper>
   </div>
 ))`
   display: flex;

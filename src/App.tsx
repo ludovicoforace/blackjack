@@ -9,13 +9,13 @@ const App = styled((props: HTMLAttributes<HTMLDivElement>) => (
     <Board />
   </PageContainer>
 ))`
-  padding: 0 ${spacing.viewportHeight};
+  padding: 0 2rem;
 
   margin-top: ${spacing.viewportHeight};
   margin-bottom: ${spacing.viewportHeight};
 
   @media screen and (${spacing.tabletMaxWidth}) {
-    padding: 0 calc(${spacing.viewportHeight} / 2);
+    padding: 0 1rem;
 
     margin-top: calc(${spacing.viewportHeight} / 2);
     margin-bottom: calc(${spacing.viewportHeight} / 2);
