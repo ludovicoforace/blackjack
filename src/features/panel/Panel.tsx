@@ -7,7 +7,7 @@ import { spacing } from '../../style/theme'
 const Panel = styled((props: HTMLAttributes<HTMLDivElement>) => {
   return (
     <div {...props}>
-      <Header>Hit or Stick?</Header>
+      <Header withShadow>Hit or Stick?</Header>
       <Buttons />
     </div>
   )
