@@ -4,7 +4,7 @@ import { background, spacing } from '../style/theme'
 import Panel from '../features/panel/Panel'
 import Player from '../features/player/Player'
 
-const PlayerWrapper = styled.div`
+const PlayersWrapper = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -15,10 +15,10 @@ const PlayerWrapper = styled.div`
 const Board = styled((props: HTMLAttributes<HTMLDivElement>) => (
   <div {...props}>
     <Panel />
-    <PlayerWrapper>
+    <PlayersWrapper>
       <Player />
       <Player />
-    </PlayerWrapper>
+    </PlayersWrapper>
   </div>
 ))`
   display: flex;
